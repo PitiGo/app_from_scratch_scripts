@@ -13,7 +13,7 @@ from scripts.crea_widgets_and_splash_screens import create_widgets_and_splashscr
 from scripts.crea_user_preferences import create_user_preferences
 
 
-app_name = 'miappmajestuosa'
+app_name = 'weekplanner'
 
 create_flutter_app(app_name)
 add_dependencies(app_name)
@@ -26,7 +26,7 @@ create_language_provider(app_name)
 create_user_preferences(app_name)
 create_icon(app_name, app_name)
 
-generate_native_splash('./miappmajestuosa')
+generate_native_splash('./'+app_name)
 
 
 #Borra carpeta test
