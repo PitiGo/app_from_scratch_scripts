@@ -9,6 +9,7 @@ from scripts.crea_provider import create_language_provider
 from scripts.crea_assets_and_files import create_assets_and_files
 from scripts.crea_responsive import create_responsive_layout
 from scripts.crea_styles import create_styles_class
+from scripts.crea_themes import create_theme_files
 from scripts.crea_widgets_and_splash_screens import create_widgets_and_splashscreen
 from scripts.crea_user_preferences import create_user_preferences
 
@@ -27,6 +28,9 @@ create_user_preferences(app_name)
 create_icon(app_name, app_name)
 
 generate_native_splash('./'+app_name)
+# Replace 'my_app' with the name of your app
+print("Creando themes...")
+create_theme_files(app_name)
 
 
 #Borra carpeta test
